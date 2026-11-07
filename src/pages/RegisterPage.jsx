@@ -49,8 +49,9 @@ export default function RegisterPage({ onRegister, goToLogin }) {
         {/* Left Side: Image */}
         <div className="md:w-1/2 relative bg-gray-200 min-h-[280px] md:min-h-full overflow-hidden">
           <img
-            src="/images/hallway.png"
+            src="/images/hallway.webp"
             alt="Campus Hallway"
+            width="408" height="605" loading="lazy"
             className="w-full h-full object-cover object-center absolute inset-0"
             onError={(e) => {
               e.target.onerror = null;
