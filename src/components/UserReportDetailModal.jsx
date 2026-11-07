@@ -12,6 +12,7 @@ export default function UserReportDetailModal({ report, onClose }) {
         <div className="flex items-center justify-between pb-4 border-b border-gray-200">
           <div className="flex items-center space-x-3">
             <button
+              aria-label="Kembali"
               onClick={onClose}
               className="w-8 h-8 rounded-full border border-gray-400 flex items-center justify-center hover:bg-gray-100 transition-colors"
             >
@@ -22,8 +23,9 @@ export default function UserReportDetailModal({ report, onClose }) {
             </h2>
           </div>
           <button
+            aria-label="Tutup"
             onClick={onClose}
-            className="text-gray-400 hover:text-gray-700 p-1 rounded-lg"
+            className="text-gray-500 hover:text-gray-700 p-1 rounded-lg"
           >
             <X className="w-6 h-6" />
           </button>
@@ -34,22 +36,22 @@ export default function UserReportDetailModal({ report, onClose }) {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-4">
               <div>
-                <p className="text-xs font-bold text-gray-400 uppercase">Kategori</p>
+                <p className="text-xs font-bold text-gray-500 uppercase">Kategori</p>
                 <p className="text-lg font-black text-gray-900">{report.category || report.title}</p>
               </div>
 
               <div>
-                <p className="text-xs font-bold text-gray-400 uppercase">Tanggal Kejadian</p>
+                <p className="text-xs font-bold text-gray-500 uppercase">Tanggal Kejadian</p>
                 <p className="text-sm font-bold text-gray-800">{report.formattedDate || report.date}</p>
               </div>
 
               <div>
-                <p className="text-xs font-bold text-gray-400 uppercase">Lokasi</p>
+                <p className="text-xs font-bold text-gray-500 uppercase">Lokasi</p>
                 <p className="text-sm font-bold text-gray-800">{report.location}</p>
               </div>
 
               <div>
-                <p className="text-xs font-bold text-gray-400 uppercase">Status Pengaduan</p>
+                <p className="text-xs font-bold text-gray-500 uppercase">Status Pengaduan</p>
                 <span className="inline-block mt-1 px-4 py-1 rounded-full text-xs font-black bg-brand-light text-gray-900">
                   {report.status}
                 </span>
@@ -57,7 +59,7 @@ export default function UserReportDetailModal({ report, onClose }) {
             </div>
 
             <div>
-              <p className="text-xs font-bold text-gray-400 uppercase mb-2">Foto Bukti Lampiran</p>
+              <p className="text-xs font-bold text-gray-500 uppercase mb-2">Foto Bukti Lampiran</p>
               <div className="w-full h-44 rounded-2xl overflow-hidden bg-gray-100 border border-gray-200">
                 <img
                   src={report.image}

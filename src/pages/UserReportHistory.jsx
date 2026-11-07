@@ -66,15 +66,16 @@ export default function UserReportHistory({ reports, onSelectReport, isLoading, 
           <div className="relative flex-1 max-w-sm">
             <input
               type="text"
+              aria-label="Cari laporan"
               placeholder="Cari berdasarkan judul / ID tiket..."
               value={searchQuery}
               onChange={(e) => {
                 setSearchQuery(e.target.value);
                 setCurrentPage(1); // Reset ke slide 1 saat mencari
               }}
-              className="w-full pl-10 pr-4 py-2.5 bg-gray-100 text-gray-800 rounded-2xl text-xs font-medium outline-none focus:ring-2 focus:ring-brand-teal placeholder:text-gray-400 border border-transparent"
+              className="w-full pl-10 pr-4 py-2.5 bg-gray-100 text-gray-800 rounded-2xl text-xs font-medium outline-none focus:ring-2 focus:ring-brand-teal placeholder:text-gray-500 border border-transparent"
             />
-            <Search className="w-4 h-4 text-gray-400 absolute left-3.5 top-3" />
+            <Search className="w-4 h-4 text-gray-500 absolute left-3.5 top-3" />
           </div>
 
           <div className="flex flex-wrap gap-2">

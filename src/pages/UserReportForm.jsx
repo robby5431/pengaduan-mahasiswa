@@ -110,11 +110,12 @@ const handleSubmit = (e) => {
             
             {/* Kategori Laporan */}
             <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">
+              <label className="block text-sm font-semibold text-gray-700 mb-2" htmlFor="report-category">
                 Kategori Laporan
               </label>
               <div className="relative">
                 <select
+                  id="report-category"
                   value={category}
                   onChange={(e) => setCategory(e.target.value)}
                   required
@@ -133,11 +134,11 @@ const handleSubmit = (e) => {
 
             {/* Tanggal Kejadian Menggunakan Fitur Date Picker Interaktif */}
             <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">
+              <label className="block text-sm font-semibold text-gray-700 mb-2" htmlFor="report-date">
                 Tanggal Kejadian
               </label>
               <div className="relative flex items-center">
-                <input
+                <input id="report-date"
                   type="date"
                   value={date}
                   onChange={(e) => setDate(e.target.value)}
@@ -153,37 +154,38 @@ const handleSubmit = (e) => {
 
             {/* Lokasi */}
             <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">
+              <label className="block text-sm font-semibold text-gray-700 mb-2" htmlFor="report-location">
                 Lokasi
               </label>
-              <input
+              <input id="report-location"
                 type="text"
                 value={location}
                 onChange={(e) => setLocation(e.target.value)}
                 placeholder="Masukkan lokasi temuan (Contoh: Gedung A Lantai 2, Ruang Lab 3)"
                 required
-                className="w-full px-5 py-4 bg-brand-inputBg text-gray-800 rounded-2xl border-none outline-none focus:ring-2 focus:ring-brand-teal text-sm font-medium placeholder:text-gray-400"
+                className="w-full px-5 py-4 bg-brand-inputBg text-gray-800 rounded-2xl border-none outline-none focus:ring-2 focus:ring-brand-teal text-sm font-medium placeholder:text-gray-500"
               />
             </div>
 
             {/* Deskripsi */}
             <div>
               <div className="flex justify-between items-center mb-2">
-                <label className="block text-sm font-semibold text-gray-700">
+                <label className="block text-sm font-semibold text-gray-700" htmlFor="report-description">
                   Deskripsi
                 </label>
-                <span className="text-xs text-gray-400 font-medium">
+                <span className="text-xs text-gray-500 font-medium">
                   {description.length}/500 karakter
                 </span>
               </div>
               <textarea
+                id="report-description"
                 rows={4}
                 maxLength={500}
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
                 placeholder="Masukkan deskripsi temuan secara jelas dan rinci"
                 required
-                className="w-full px-5 py-4 bg-brand-inputBg text-gray-800 rounded-2xl border-none outline-none focus:ring-2 focus:ring-brand-teal text-sm font-medium placeholder:text-gray-400 resize-none"
+                className="w-full px-5 py-4 bg-brand-inputBg text-gray-800 rounded-2xl border-none outline-none focus:ring-2 focus:ring-brand-teal text-sm font-medium placeholder:text-gray-500 resize-none"
               />
             </div>
 
