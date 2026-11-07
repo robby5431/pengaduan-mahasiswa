@@ -13,6 +13,7 @@ export default function AdminReportDetail({ report, onBack, onUpdateStatus, onDe
         {/* Header with Back Arrow and Title */}
         <div className="flex items-center space-x-3">
           <button
+            aria-label="Kembali ke daftar laporan"
             onClick={onBack}
             className="w-9 h-9 rounded-full border-2 border-gray-900 flex items-center justify-center hover:bg-gray-100 transition-colors"
           >

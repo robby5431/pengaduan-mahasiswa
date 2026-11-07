@@ -49,8 +49,9 @@ export default function RegisterPage({ onRegister, goToLogin }) {
         {/* Left Side: Image */}
         <div className="md:w-1/2 relative bg-gray-200 min-h-[280px] md:min-h-full overflow-hidden">
           <img
-            src="/images/hallway.png"
+            src="/images/hallway.webp"
             alt="Campus Hallway"
+            width="408" height="605" loading="lazy"
             className="w-full h-full object-cover object-center absolute inset-0"
             onError={(e) => {
               e.target.onerror = null;
@@ -77,8 +78,8 @@ export default function RegisterPage({ onRegister, goToLogin }) {
 
           <form onSubmit={handleSubmit} noValidate className="space-y-4">
             <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-1.5">Nama Lengkap</label>
-              <input
+              <label htmlFor="register-name" className="block text-sm font-semibold text-gray-700 mb-2">Nama Lengkap</label>
+              <input id="register-name"
                 type="text"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
@@ -89,8 +90,8 @@ export default function RegisterPage({ onRegister, goToLogin }) {
             </div>
 
             <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-1.5">Email</label>
-              <input
+              <label htmlFor="register-email" className="block text-sm font-semibold text-gray-700 mb-2">Email</label>
+              <input id="register-email"
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -101,8 +102,8 @@ export default function RegisterPage({ onRegister, goToLogin }) {
             </div>
 
             <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-1.5">Password</label>
-              <input
+              <label htmlFor="register-password" className="block text-sm font-semibold text-gray-700 mb-2">Password</label>
+              <input id="register-password"
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}

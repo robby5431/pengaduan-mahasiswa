@@ -26,8 +26,9 @@ export default function AdminHome({ user, reports, isLoading, loadError, onRetry
       {/* Top Banner: University Building */}
       <div className="relative h-64 sm:h-72 w-full overflow-hidden bg-slate-800">
         <img
-          src="/images/university.png"
+          src="/images/university.webp"
           alt="University Campus"
+          width="1127" height="541"
           className="w-full h-full object-cover object-center"
           onError={(e) => {
             e.target.onerror = null;
@@ -48,8 +49,9 @@ export default function AdminHome({ user, reports, isLoading, loadError, onRetry
               <div className="relative w-80 h-72 sm:w-96 sm:h-80 flex items-center justify-center">
                 <div className="absolute inset-0 bg-[#e0f4f2] rounded-full filter blur-xl opacity-70 transform -translate-y-2"></div>
                 <img
-                  src="/images/hero_illustration.png"
+                  src="/images/hero_illustration.webp"
                   alt="Admin Sarpras"
+                  width="582" height="582"
                   className="relative z-10 w-full h-full object-contain drop-shadow-md scale-110 sm:scale-125"
                   onError={(e) => {
                     e.target.onerror = null;

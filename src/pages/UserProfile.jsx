@@ -114,28 +114,28 @@ export default function UserProfile({ user, role, onUpdateUser, onSignOut }) {
           </div>
 
           <div>
-            <label className="block text-xs font-semibold text-gray-700 mb-1.5">
-              Email <span className="text-gray-400 font-normal">(Tidak dapat diubah)</span>
+            <label htmlFor="profile-email" className="block text-sm font-semibold text-gray-700 mb-2">
+              Email <span className="text-gray-500 font-normal">(Tidak dapat diubah)</span>
             </label>
             <div className="relative">
-              <input
+              <input id="profile-email"
                 type="email"
                 value={email}
                 disabled
                 className="w-full px-4 py-3 pr-11 bg-gray-100 text-gray-500 rounded-xl border border-gray-300 outline-none text-sm font-medium cursor-not-allowed select-none"
               />
-              <div className="absolute inset-y-0 right-0 pr-3.5 flex items-center text-gray-400 pointer-events-none" title="Email dikunci">
+              <div className="absolute inset-y-0 right-0 pr-3.5 flex items-center text-gray-500 pointer-events-none" title="Email dikunci">
                 <Lock className="w-4 h-4" />
               </div>
             </div>
           </div>
 
           <div>
-            <label className="block text-xs font-semibold text-gray-700 mb-1.5">
+            <label htmlFor="profile-password" className="...">
               Password
             </label>
             <div className="relative">
-              <input
+              <input id="profile-password"
                 type={showPassword ? 'text' : 'password'}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}

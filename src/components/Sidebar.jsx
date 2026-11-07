@@ -32,6 +32,7 @@ export default function Sidebar({ currentTab, setTab, role, user, isOpenMobile, 
           <div className="flex items-center justify-between pb-2 md:hidden border-b border-white/20">
             <span className="font-bold text-sm tracking-wide">Menu Navigasi</span>
             <button
+              aria-label="Tutup menu"
               onClick={onCloseMobile}
               className="p-1 rounded-lg hover:bg-white/20 text-white transition-colors"
             >

@@ -74,12 +74,13 @@ export default function AdminReportList({ reports, onSelectReport, isLoading, lo
           <div className="relative w-full sm:w-72">
             <input
               type="text"
+              aria-label="Cari laporan"
               placeholder="Cari ID tiket atau kategori..."
               value={searchQuery}
               onChange={(e) => { setSearchQuery(e.target.value); setCurrentPage(1); }}
-              className="w-full pl-9 pr-4 py-2 bg-gray-100 text-gray-800 rounded-xl text-xs font-medium outline-none focus:ring-2 focus:ring-brand-teal placeholder:text-gray-400"
+              className="w-full pl-9 pr-4 py-2 bg-gray-100 text-gray-800 rounded-xl text-xs font-medium outline-none focus:ring-2 focus:ring-brand-teal placeholder:text-gray-500"
             />
-            <Search className="w-4 h-4 text-gray-400 absolute left-3 top-2.5" />
+            <Search className="w-4 h-4 text-gray-500 absolute left-3 top-2.5" />
           </div>
         </div>
 

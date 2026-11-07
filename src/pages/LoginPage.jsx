@@ -53,8 +53,9 @@ export default function LoginPage({ onLogin, goToRegister }) {
         {/* Left Side: Image */}
         <div className="md:w-1/2 relative bg-gray-200 min-h-[280px] md:min-h-full overflow-hidden">
           <img
-            src="/images/hallway.png"
+            src="/images/hallway.webp"
             alt="Campus Hallway"
+            width="408" height="605" loading="lazy"
             className="w-full h-full object-cover object-center absolute inset-0"
             onError={(e) => {
               e.target.onerror = null;
@@ -81,8 +82,8 @@ export default function LoginPage({ onLogin, goToRegister }) {
 
           <form onSubmit={handleSubmit} className="space-y-5">
             <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">Email</label>
-              <input
+              <label htmlFor="login-email" className="block text-sm font-semibold text-gray-700 mb-2">Email</label>
+              <input id="login-email"
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -93,8 +94,8 @@ export default function LoginPage({ onLogin, goToRegister }) {
             </div>
 
             <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">Password</label>
-              <input
+              <label htmlFor="login-password" className="...">Password</label>
+              <input id="login-password"
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
