@@ -8,7 +8,7 @@ export default {
     extend: {
       colors: {
         brand: {
-          teal: '#0C847A',       // 0C847A - Main brand / Sidebar / Header Banner
+          teal: '#0A766D',       // 0A766D - Main brand / Sidebar / Header Banner
           light: '#72CEC7',      // 72CEC7 - Stat cards / Secondary containers
           dark: '#0F766E',       // 0F766E - Action buttons (Lapor sekarang, Kirim, Simpan)
           red: '#E81010',        // E81010 - Sign Out, Status Ditolak

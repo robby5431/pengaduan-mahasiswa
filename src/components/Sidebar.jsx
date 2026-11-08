@@ -145,7 +145,7 @@ export default function Sidebar({ currentTab, setTab, role, user, isOpenMobile, 
                 <span className={`truncate text-xs font-bold leading-tight ${currentTab === 'profile' ? 'text-gray-900' : 'text-white'}`}>
                   Profil Pengguna
                 </span>
-                <span className={`text-[10px] font-medium leading-tight capitalize ${currentTab === 'profile' ? 'text-gray-500' : 'text-white/70'}`}>
+                <span className={`text-[10px] font-medium leading-tight capitalize ${currentTab === 'profile' ? 'text-gray-500' : 'text-white'}`}>
                   {role === 'admin' ? 'Admin Sarpras' : 'Mahasiswa'}
                 </span>
               </div>

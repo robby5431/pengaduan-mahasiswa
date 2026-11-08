@@ -85,9 +85,9 @@ export default function UserHome({ user, reports, goToForm, isLoading, loadError
           <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {/* Card 1: Laporan Masuk */}
             <div className="bg-brand-light rounded-3xl p-5 sm:p-6 flex flex-col items-center justify-center text-center shadow-sm hover:shadow-md transition-all">
-              <h3 className="font-extrabold text-gray-900 text-sm sm:text-base mb-2">
+              <h2 className="font-extrabold text-gray-900 text-sm sm:text-base mb-2">
                 Laporan Masuk
-              </h3>
+              </h2>
               <span className="text-4xl sm:text-6xl font-black text-white tracking-wider">
                 {padZero(countMasuk)}
               </span>
@@ -95,9 +95,9 @@ export default function UserHome({ user, reports, goToForm, isLoading, loadError
 
             {/* Card 2: Laporan Diproses */}
             <div className="bg-brand-light rounded-3xl p-5 sm:p-6 flex flex-col items-center justify-center text-center shadow-sm hover:shadow-md transition-all">
-              <h3 className="font-extrabold text-gray-900 text-sm sm:text-base mb-2">
+              <h2 className="font-extrabold text-gray-900 text-sm sm:text-base mb-2">
                 Laporan Diproses
-              </h3>
+              </h2>
               <span className="text-4xl sm:text-6xl font-black text-white tracking-wider">
                 {padZero(countDiproses)}
               </span>
@@ -105,9 +105,9 @@ export default function UserHome({ user, reports, goToForm, isLoading, loadError
 
             {/* Card 3: Laporan Ditolak */}
             <div className="bg-brand-light rounded-3xl p-5 sm:p-6 flex flex-col items-center justify-center text-center shadow-sm hover:shadow-md transition-all">
-              <h3 className="font-extrabold text-gray-900 text-sm sm:text-base mb-2">
+              <h2 className="font-extrabold text-gray-900 text-sm sm:text-base mb-2">
                 Laporan Ditolak
-              </h3>
+              </h2>
               <span className="text-4xl sm:text-6xl font-black text-white tracking-wider">
                 {padZero(countDitolak)}
               </span>
@@ -115,9 +115,9 @@ export default function UserHome({ user, reports, goToForm, isLoading, loadError
 
             {/* Card 4: Laporan Selesai */}
             <div className="bg-brand-light rounded-3xl p-5 sm:p-6 flex flex-col items-center justify-center text-center shadow-sm hover:shadow-md transition-all">
-              <h3 className="font-extrabold text-gray-900 text-sm sm:text-base mb-2">
+              <h2 className="font-extrabold text-gray-900 text-sm sm:text-base mb-2">
                 Laporan Selesai
-              </h3>
+              </h2>
               <span className="text-4xl sm:text-6xl font-black text-white tracking-wider">
                 {padZero(countSelesai)}
               </span>

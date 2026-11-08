@@ -268,7 +268,7 @@ const handleRegister = (data) => {
             </div>
 
             <div className="flex items-center space-x-2">
-              <span className="text-xs font-semibold opacity-90 capitalize">
+              <span className="text-xs font-semibold capitalize">
                 {currentUser ? (role === 'admin' ? 'Admin' : 'Mahasiswa') : 'Pengunjung'}
               </span>
               <img
