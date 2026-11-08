@@ -102,10 +102,10 @@ export default function UserProfile({ user, role, onUpdateUser, onSignOut }) {
         {/* Form Fields */}
         <form onSubmit={handleSubmit} className="w-full space-y-5">
           <div>
-            <label className="block text-xs font-semibold text-gray-700 mb-1.5">
+            <label htmlFor="profile-name" className="block text-xs font-semibold text-gray-700 mb-1.5">
               Nama Lengkap
             </label>
-            <input
+            <input id="profile-name"
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}

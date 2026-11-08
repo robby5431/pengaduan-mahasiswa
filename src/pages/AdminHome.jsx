@@ -73,36 +73,36 @@ export default function AdminHome({ user, reports, isLoading, loadError, onRetry
           {/* Stat Cards Grid */}
           <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             <div className="bg-brand-light rounded-3xl p-5 sm:p-6 flex flex-col items-center justify-center text-center shadow-sm hover:shadow-md transition-all">
-              <h3 className="font-extrabold text-gray-900 text-sm sm:text-base mb-2">
+              <h2 className="font-extrabold text-gray-900 text-sm sm:text-base mb-2">
                 Laporan Masuk
-              </h3>
+              </h2>
               <span className="text-4xl sm:text-6xl font-black text-white tracking-wider">
                 {padZero(countMasuk)}
               </span>
             </div>
 
             <div className="bg-brand-light rounded-3xl p-5 sm:p-6 flex flex-col items-center justify-center text-center shadow-sm hover:shadow-md transition-all">
-              <h3 className="font-extrabold text-gray-900 text-sm sm:text-base mb-2">
+              <h2 className="font-extrabold text-gray-900 text-sm sm:text-base mb-2">
                 Laporan Diproses
-              </h3>
+              </h2>
               <span className="text-4xl sm:text-6xl font-black text-white tracking-wider">
                 {padZero(countDiproses)}
               </span>
             </div>
 
             <div className="bg-brand-light rounded-3xl p-5 sm:p-6 flex flex-col items-center justify-center text-center shadow-sm hover:shadow-md transition-all">
-              <h3 className="font-extrabold text-gray-900 text-sm sm:text-base mb-2">
+              <h2 className="font-extrabold text-gray-900 text-sm sm:text-base mb-2">
                 Laporan Ditolak
-              </h3>
+              </h2>
               <span className="text-4xl sm:text-6xl font-black text-white tracking-wider">
                 {padZero(countDitolak)}
               </span>
             </div>
 
             <div className="bg-brand-light rounded-3xl p-5 sm:p-6 flex flex-col items-center justify-center text-center shadow-sm hover:shadow-md transition-all">
-              <h3 className="font-extrabold text-gray-900 text-sm sm:text-base mb-2">
+              <h2 className="font-extrabold text-gray-900 text-sm sm:text-base mb-2">
                 Laporan Selesai
-              </h3>
+              </h2>
               <span className="text-4xl sm:text-6xl font-black text-white tracking-wider">
                 {padZero(countSelesai)}
               </span>
