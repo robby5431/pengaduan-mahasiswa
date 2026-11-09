@@ -57,9 +57,10 @@ export default function App() {
     }
   };
 
+    // Data laporan dimuat setelah login. Pengunjung langsung melihat beranda tanpa menunggu API.
   useEffect(() => {
-    loadReports();
-  }, []);
+    if (currentUser?.email) loadReports();
+  }, [currentUser?.email]);
 
   const triggerToast = (message, type = 'success') => {
     if (type === 'error') toast.error(message);
@@ -296,7 +297,7 @@ const handleRegister = (data) => {
                 user={currentUser || guestUser}
                 reports={activeUserReports}
                 goToForm={() => handleProtectedAction(() => setCurrentTab('form'))}
-                isLoading={isLoading}
+                isLoading={currentUser ? isLoading : false}
                 loadError={currentUser ? loadError : ''}
                 onRetry={loadReports}
               />
